@@ -183,9 +183,6 @@ body main .section_header h1 {
   font-size: 6em;
   font-weight: 700;
 }
-body main .sport_school {
-  padding: 6vh 1vw 6vh 1vw;
-}
 body main .basic_school .lessons_container, body main .sport_school .lessons_container {
   display: flex;
   flex-flow: wrap;
@@ -251,6 +248,100 @@ body main .sport_school .sport_header {
 }
 body main .sport_school .lessons_container {
   padding: 6vh 1vw 6vh 1vw;
+}
+body main .gift_section .gift_header {
+  background-image: url("./../media/gift_sertificate.png");
+}
+body main .gift_section .gift_content {
+  padding: 0 4vw;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+body main .gift_section h3 {
+  font-weight: 600;
+  font-size: 3.1em;
+  line-height: normal;
+  color: #ffffff;
+  text-align: center;
+  padding: 25px 0 75px 0;
+}
+body main .gift_section .certificate_block {
+  display: flex;
+  justify-content: center;
+}
+body main .gift_section .certificate_block img {
+  width: 72%;
+}
+body main .gift_section p {
+  color: #ffffff;
+  font-size: 2.81em;
+  text-align: center;
+  padding: 25px 0 42px 0;
+}
+body main .gift_section .order_btn {
+  width: 17% !important;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 60%;
+  height: 25%;
+  border-radius: 23px;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2.2em;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  margin: 0 0 6vh 0;
+}
+body main .gift_section .order_btn:hover {
+  background-color: #E7F34B;
+}
+body main .question_section .questions_header {
+  background-image: url("./../media/qustion_answers.png");
+}
+body main .question_section .question_container {
+  padding: 6vh 6vw;
+}
+body main .question_section .question_container ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  row-gap: 10px;
+}
+body main .question_section .question_container ul li {
+  color: #ffffff;
+  font-size: 3.1em;
+  line-height: normal;
+  cursor: pointer;
+}
+body main .contact_section .contact_header {
+  background-image: url("./../media/contacts.png");
+}
+body main .contact_section .contact_content {
+  padding: 6vh 4vw;
+  display: flex;
+  flex-flow: column;
+  row-gap: 3vh;
+}
+body main .contact_section .contact_content p, body main .contact_section .contact_content a, body main .contact_section .contact_content li {
+  color: #ffffff;
+  font-size: 3.1em;
+  font-weight: 600;
+}
+body main .contact_section .contact_content .phone, body main .contact_section .contact_content .instagram, body main .contact_section .contact_content .place .place_address {
+  display: flex;
+  column-gap: 1.5vw;
+}
+body main .contact_section .contact_content .place .place_address {
+  padding-bottom: 6vh;
+}
+body main .contact_section .contact_content .place .address_list {
+  padding: 0 4vw;
+}
+body main .contact_section .contact_content .place .address_list ul {
+  padding: 0 3vw;
 }
 
 /*# sourceMappingURL=style.css.map */

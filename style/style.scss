@@ -85,6 +85,27 @@ $focus-color: #E7F34B;
   }
 }
 
+@mixin btn_style {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 60%;
+  height: 25%;
+  border-radius: 23px;
+  background-color: #ffffff;
+  text-align: center;
+  align-items: center;
+
+  font-weight: 800;
+  font-size: 2.2em;
+
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+
+  &:hover{
+    background-color: $focus-color;
+  }
+}
+
 body{
   header{
     padding: 0 4vw;
@@ -208,7 +229,7 @@ body{
 
 
     .sport_school{
-      padding: 6vh 1vw 6vh 1vw;
+
     }
     .basic_school, .sport_school{
       .lessons_container{
@@ -250,6 +271,7 @@ body{
             img{
               width: clamp(50px, 28vw, 512px);
               max-height: 504px;
+
             }
 
           }
@@ -260,24 +282,7 @@ body{
             font-weight: 700;
           }
           .want-learn_btn{
-            margin-top: 10px;
-            cursor: pointer;
-            width: 60%;
-            height: 25%;
-            border-radius: 23px;
-            background-color: #ffffff;
-           text-align: center;
-            align-items: center;
-
-            font-weight: 800;
-            font-size: 2.2em;
-
-            transition: all .3s ease-in-out;
-            -webkit-transition: all .3s ease-in-out;
-
-            &:hover{
-              background-color: $focus-color;
-            }
+           @include btn_style;
           }
         }
       }
@@ -285,13 +290,104 @@ body{
     .sport_school{
       .sport_header{
         background-image: url("./../media/sport_school.png");
-
       }
       .lessons_container{
         padding: 6vh 1vw 6vh 1vw;
 
       }
 
+    }
+    .gift_section{
+
+      .gift_header{
+        background-image: url("./../media/gift_sertificate.png");
+      }
+      .gift_content{
+        padding: 0 4vw;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+      h3{
+        font-weight: 600;
+        font-size: 3.1em;
+        line-height: normal;
+        color: #ffffff;
+        text-align: center;
+
+        padding: 25px 0 75px 0;
+      }
+      .certificate_block{
+        display: flex;
+        justify-content: center;
+        img{
+          width: 72%;
+        }
+      }
+      p{
+        color: #ffffff;
+        font-size: 2.81em;
+        text-align: center;
+
+        padding: 25px 0 42px 0 ;
+      }
+
+      .order_btn{
+        width: 17% !important;
+        @include btn_style;
+        margin: 0 0 6vh 0;
+      }
+    }
+    .question_section{
+      .questions_header{
+        background-image: url("./../media/qustion_answers.png");
+      }
+      .question_container{
+        padding: 6vh 6vw;
+        ul{
+          display: flex;
+          flex-flow: column;
+          justify-content: center;
+          row-gap: 10px;
+          li{
+            color: #ffffff;
+            font-size: 3.1em;
+            line-height: normal;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .contact_section{
+      .contact_header{
+        background-image: url("./../media/contacts.png");
+      }
+      .contact_content{
+        padding: 6vh 4vw;
+        display: flex;
+        flex-flow: column;
+        row-gap: 3vh;
+        p, a, li{
+          color: #ffffff;
+          font-size: 3.1em;
+          font-weight: 600;
+        }
+        .phone, .instagram, .place .place_address{
+          display: flex;
+          column-gap: 1.5vw;
+        }
+        .place{
+          .place_address{
+            padding-bottom: 6vh;
+          }
+          .address_list{
+            padding: 0 4vw;
+            ul{
+              padding: 0 3vw;
+            }
+          }
+        }
+      }
     }
   }
 }
