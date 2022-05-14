@@ -107,6 +107,10 @@ $focus-color: #E7F34B;
 }
 
 body{
+  *{
+    transition: all .3s;
+    -webkit-transition: all .3s;
+  }
   header{
     padding: 0 4vw;
     background: #000000;
@@ -153,11 +157,11 @@ body{
     background-color: #000000;
     background-image: url("./../media/main_bg.png");
     .first_section{
-      min-height: 100vh;
+      min-height: 100%;
       display: flex;
       align-items: center;
       position: relative;
-      padding: 0 4vw;
+      padding: 3vh 4vw;
       margin: auto 0;
       overflow: hidden;
 

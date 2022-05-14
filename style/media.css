@@ -1,0 +1,49 @@
+@media (max-width: 1584px) {
+  body header .menu_anchors {
+    width: 73%;
+  }
+  body main .first_section .txt h1 {
+    font-size: 4em;
+  }
+  body main .first_section .txt a, body main .first_section .txt p {
+    font-size: 2em;
+  }
+  body main .first_section .big_logo img {
+    width: 80%;
+  }
+  body main .second_section p {
+    font-size: 2.1em;
+  }
+  body main .section_header h1 {
+    font-size: 5em;
+  }
+  body main .basic_school .lessons_container .lesson .lesson_img h3, body main .sport_school .lessons_container .lesson .lesson_img h3 {
+    font-size: 2em;
+  }
+  body main .basic_school .lessons_container .lesson .lesson_price, body main .sport_school .lessons_container .lesson .lesson_price {
+    font-size: 1.1em;
+  }
+  body main .basic_school .lessons_container .lesson .want-learn_btn, body main .sport_school .lessons_container .lesson .want-learn_btn {
+    font-size: 1.1em;
+  }
+  body main .gift_section h3 {
+    font-size: 2.1em;
+  }
+  body main .gift_section p {
+    font-size: 1.81em;
+  }
+  body main .gift_section .order_btn {
+    font-size: 1.2em;
+  }
+  body main .question_section .question_container ul li {
+    font-size: 2.1em;
+  }
+  body main .contact_section .contact_content img {
+    width: 28px;
+  }
+  body main .contact_section .contact_content a, body main .contact_section .contact_content li, body main .contact_section .contact_content p {
+    font-size: 2.1em;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

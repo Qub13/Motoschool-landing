@@ -1,0 +1,86 @@
+@media (max-width: 1584px) {
+  body {
+    header {
+      .menu_anchors {
+        width: 73%;
+      }
+    }
+
+    main {
+      .first_section {
+        .txt {
+          h1 {
+            font-size: 4em;
+          }
+          a, p{
+            font-size: 2em;
+          }
+        }
+        .big_logo{
+          img{
+            width: 80%;
+          }
+        }
+
+
+      }
+      .second_section{
+        p{
+          font-size: 2.1em;
+        }
+      }
+      .section_header{
+        h1{
+          font-size: 5em;
+        }
+      }
+      .basic_school, .sport_school{
+        .lessons_container{
+          .lesson{
+            .lesson_img{
+              h3{
+                font-size: 2em;
+              }
+            }
+            .lesson_price{
+              font-size: 1.1em;
+            }
+            .want-learn_btn{
+              font-size: 1.1em;
+            }
+          }
+        }
+      }
+      .gift_section{
+        h3{
+          font-size: 2.1em;
+        }
+        p{
+          font-size: 1.81em;
+        }
+        .order_btn{
+          font-size: 1.2em;
+        }
+      }
+      .question_section{
+        .question_container{
+          ul{
+            li{
+              font-size: 2.1em;
+            }
+          }
+        }
+      }
+      .contact_section{
+        .contact_content{
+          img{
+            width: 28px;
+          }
+          a, li, p{
+            font-size: 2.1em;
+          }
+        }
+      }
+    }
+  }
+}
