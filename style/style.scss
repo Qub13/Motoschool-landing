@@ -245,6 +245,16 @@ body{
         column-gap: 6vw;
         padding: 6vh 4vw 6vh 4vw;
 
+        .lesson_description{
+          font-weight: 600;
+          color: #ffffff;
+          font-size: 2.2em;
+          padding-top: 20px;
+          max-height: 0;
+          overflow: hidden;
+        }
+
+
 
         .lesson{
 
@@ -254,8 +264,11 @@ body{
           justify-content: center;
           position: relative;
 
+          max-width: 524px;
+
           .lesson_img {
             position: relative;
+            cursor: pointer;
             h3{
               position: absolute;
               width: 100%;
@@ -367,11 +380,14 @@ body{
             align-items: center;
             flex-flow: wrap;
             .question_answer{
+              transition: max-height .3s ease-in-out;
               width: 100%;
               padding-top: 2vh;
               text-transform: none;
-              height: 0;
               overflow: hidden;
+              max-height: 0;
+
+              align-content: center;
             }
             .question_mark{
               width: 60px;

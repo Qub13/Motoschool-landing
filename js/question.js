@@ -5,10 +5,10 @@ questionBtn.forEach((btn, index)=>{
     btn.addEventListener("click", ()=>{
         if(btn.classList.contains("question_mark_active")){
             btn.classList.remove("question_mark_active");
-            answer[index].style.height = "0";
+            answer[index].style.maxHeight = "0";
         } else{
             btn.classList.add("question_mark_active");
-            answer[index].style.height = "unset";
+            answer[index].style.maxHeight = "300px";
         }
     })
 })

@@ -196,15 +196,25 @@ body main .basic_school .lessons_container, body main .sport_school .lessons_con
   column-gap: 6vw;
   padding: 6vh 4vw 6vh 4vw;
 }
+body main .basic_school .lessons_container .lesson_description, body main .sport_school .lessons_container .lesson_description {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 2.2em;
+  padding-top: 20px;
+  max-height: 0;
+  overflow: hidden;
+}
 body main .basic_school .lessons_container .lesson, body main .sport_school .lessons_container .lesson {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  max-width: 524px;
 }
 body main .basic_school .lessons_container .lesson .lesson_img, body main .sport_school .lessons_container .lesson .lesson_img {
   position: relative;
+  cursor: pointer;
 }
 body main .basic_school .lessons_container .lesson .lesson_img h3, body main .sport_school .lessons_container .lesson .lesson_img h3 {
   position: absolute;
@@ -329,11 +339,13 @@ body main .question_section .question_container ul li {
   flex-flow: wrap;
 }
 body main .question_section .question_container ul li .question_answer {
+  transition: max-height 0.3s ease-in-out;
   width: 100%;
   padding-top: 2vh;
   text-transform: none;
-  height: 0;
   overflow: hidden;
+  max-height: 0;
+  align-content: center;
 }
 body main .question_section .question_container ul li .question_mark {
   width: 60px;
