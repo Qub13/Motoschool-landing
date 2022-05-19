@@ -1,3 +1,28 @@
+@media (max-width: 1666px) {
+  body {
+    main {
+      .question_section {
+        .question_container {
+          ul {
+            li {
+              font-size: 1.6em;
+              .question_mark{
+                width: 50px;
+                height: 50px;
+                &:after{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1584px) {
   body {
     header {
@@ -41,6 +66,10 @@
 
       .basic_school, .sport_school {
         .lessons_container {
+          .lesson_description{
+            font-size: 1.7em;
+            text-align: center;
+          }
           .lesson {
             .lesson_img {
               h3 {
@@ -70,17 +99,6 @@
 
         .order_btn {
           font-size: 1.2em;
-        }
-      }
-
-      .question_section {
-        .question_container {
-          ul {
-            li {
-              font-size: 2.1em;
-
-            }
-          }
         }
       }
 
@@ -170,7 +188,7 @@
         .question_container {
           ul {
             li {
-              font-size: 1.4em;
+              font-size: 1em;
             }
           }
         }
@@ -248,23 +266,26 @@
         .lessons_container {
           .lesson {
             width: 100%;
+
             .lesson_img {
-              h3{
+              h3 {
                 font-size: 1.75em;
               }
+
               img {
                 width: 49vw;
               }
             }
-            .want-learn_btn{
+
+            .want-learn_btn {
               width: clamp(204px, 30%, 325px);
             }
           }
         }
       }
 
-      .gift_section{
-        .order_btn{
+      .gift_section {
+        .order_btn {
           width: clamp(204px, 30%, 325px) !important;
         }
       }
@@ -272,42 +293,69 @@
   }
 }
 
-@media (max-width: 609px) {
+@media (max-width: 707px) {
   body{
-    header{
-      .menu_anchors{
-        ul{
-          li{
-            a{
+    main{
+      .question_section{
+        .question_container{
+          ul{
+            li{
+              font-size: .9em;
+              .question_mark{
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 609px) {
+  body {
+    header {
+      .menu_anchors {
+        ul {
+          li {
+            a {
               font-size: .9em;
             }
           }
         }
       }
     }
-    main{
-      .first_section{
-        .txt{
-          h1{
+
+    main {
+      .first_section {
+        .txt {
+          h1 {
             font-size: 1em;
             padding-bottom: 5px;
           }
-          a, p{
+
+          a, p {
             font-size: .8em;
           }
         }
-        .big_logo{
-          img{
+
+        .big_logo {
+          img {
             width: 30%;
             height: auto;
           }
         }
       }
-      .basic_school, .sport_school{
-        .lessons_container{
-          .lesson{
-            .lesson_img{
-              h3{
+
+      .basic_school, .sport_school {
+        .lessons_container {
+          .lesson_description{
+            font-size: 1.1em;
+          }
+          .lesson {
+            .lesson_img {
+              h3 {
                 font-size: 1.2em;
               }
             }
@@ -318,90 +366,134 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 528px) {
   body{
-    header{
-      .logo{
-        width:30%;
-        img{
+    main{
+      .question_section{
+        .question_container{
+          ul{
+            li{
+              //font-size: 1em;
+              justify-content: center;
+              text-align: center;
+              p{
+                width: 100%;
+
+              }
+              .question_mark{
+                margin-top: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    header {
+      .logo {
+        width: 30%;
+
+        img {
           width: 85%;
         }
       }
-      .menu_anchors{
+
+      .menu_anchors {
         width: 70%;
       }
     }
-    main{
-      .first_section{
+
+    main {
+      .first_section {
         padding: 1vh 4vw;
-        .big_logo{
+
+        .big_logo {
           padding-top: 4px;
         }
-        .txt{
-          h1{
+
+        .txt {
+          h1 {
             font-size: .9em;
           }
-          a, p{
+
+          a, p {
             font-size: .8em;
           }
         }
       }
-      .section_header{
+
+      .section_header {
         height: 5vh;
-        h1{
+
+        h1 {
           font-size: 1.1em;
         }
       }
-      .second_section{
-        p{
+
+      .second_section {
+        p {
           font-size: .8em;
         }
       }
-      .basic_school, .sport_school{
-        .lessons_container{
-          .lesson{
-            .lesson_img{
-              img{
+
+      .basic_school, .sport_school {
+        .lessons_container {
+          .lesson {
+            .lesson_img {
+              img {
                 width: 64vw;
               }
             }
           }
         }
       }
-      .gift_section{
-        h3{
+
+      .gift_section {
+        h3 {
           font-size: 1.2em;
           padding: 10px 0 35px 0;
         }
-        p{
+
+        p {
           font-size: .9em;
           padding: 10px 0 18px 0;
         }
-        .order_btn{
+
+        .order_btn {
           margin-bottom: 3vh;
         }
       }
-      .question_section{
-        .question_container{
+
+      .question_section {
+        .question_container {
           padding: 3vh 8vw;
-          ul{
-            li{
-              font-size: .9em;
-            }
-          }
+
+          //ul {
+          //  li {
+          //    font-size: .9em;
+          //  }
+          //}
         }
       }
-      .contact_section{
-        .contact_content{
+
+      .contact_section {
+        .contact_content {
           padding: 3vh 4vw;
-          a, p, li{
+
+          a, p, li {
             font-size: .8em;
           }
-          img{
+
+          img {
             width: 18px;
           }
-          .place{
-            .place_address{
+
+          .place {
+            .place_address {
               padding-bottom: 2vh;
             }
           }

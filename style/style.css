@@ -354,6 +354,7 @@ body main .question_section .question_container ul li .question_mark {
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 body main .question_section .question_container ul li .question_mark {
   position: relative;
