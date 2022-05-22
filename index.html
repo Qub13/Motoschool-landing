@@ -60,7 +60,7 @@
             <h1>Базовая школа</h1>
         </div>
         <div class="lessons_container">
-            <div class="lesson">
+            <div class="lesson" id="basic_course">
                 <div class="lesson_img">
                     <h3>курс<br> "базовый"</h3>
                     <img src="./media/courses_img/basic_course.png" alt="basic">
@@ -83,7 +83,7 @@
                     Хочу учиться
                 </span>
             </div>
-            <div class="lesson">
+            <div class="lesson" id="test_course">
                 <div class="lesson_img">
                     <h3>пробное<br>
                         занятие</h3>
@@ -100,8 +100,8 @@
                     Хочу учиться
                 </span>
             </div>
-            <div class="lesson">
-                <div class="lesson_img">
+            <div class="lesson" id="remember_course">
+                <div class="lesson_img" >
                     <h3>Курс<br>
                         «вспомнить все»</h3>
                     <img src="./media/courses_img/remember_all.png" alt="basic">
@@ -117,8 +117,8 @@
                     Хочу учиться
                 </span>
             </div>
-            <div class="lesson">
-                <div class="lesson_img">
+            <div class="lesson" id="individual_course">
+                <div class="lesson_img" >
                     <h3>Индивидуальное<br>
                         занятие</h3>
                     <img src="./media/courses_img/individual.png" alt="basic">
@@ -136,7 +136,7 @@
                     Хочу учиться
                 </span>
             </div>
-            <div class="lesson">
+            <div class="lesson" id="children_course">
                 <div class="lesson_img">
                     <h3>Курс для<br>
                         детей</h3>
@@ -166,7 +166,7 @@
             <h1>Спортивная школа</h1>
         </div>
         <div class="lessons_container">
-            <div class="lesson">
+            <div class="lesson" id="motosport_course">
                 <div class="lesson_img">
                     <h3>мотоспорт</h3>
                     <img src="./media/courses_img/motosport.png" alt="motosport">
@@ -184,7 +184,7 @@
                     Хочу учиться
                 </span>
             </div>
-            <div class="lesson">
+            <div class="lesson" id="pitbike_course">
                 <div class="lesson_img">
                     <h3>Питбайки</h3>
                     <img src="./media/courses_img/pitbike.png" alt="pitbike">
@@ -204,7 +204,7 @@
                     Хочу учиться
                 </span>
             </div>
-            <div class="lesson">
+            <div class="lesson" id="jimhana_course">
                 <div class="lesson_img">
                     <h3>джимхана</h3>
                     <img src="./media/courses_img/jimhana.png" alt="jimhana">
@@ -355,10 +355,42 @@
         </div>
     </section>
     <section class="map_section">
-        <img src="./media/map.png" alt="map">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2538.380527400998!2d30.49341881591249!3d50.48987519240418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cdf953e66b81%3A0xa97983168ec0777e!2z0L_RgC3Rgi4g0KHRgtC10L_QsNC90LAg0JHQsNC90LTQtdGA0YssIDIzLCDQmtC40LXQsiwgMDQ2NTU!5e0!3m2!1sru!2sua!4v1653208015486!5m2!1sru!2sua"
+                   style="border:0; filter: invert(90%);" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
+    <div class="popup">
+
+        <div class="popup_content">
+            <div class="close_popup"> <span>&#10005;</span> </div>
+            <img src="./media/logo_shortcut.svg" alt="logo shortcut" class="popup_logo">
+            <img src="./media/logo.svg" alt="logo" class="popup_text_logo">
+            <form action="">
+                <input type="text" placeholder="Имя">
+                <input type="tel" placeholder="Телефон">
+                <select name="select">
+                    <option value="basic_course">Курс "Базовый"</option>
+                    <option value="test_lesson">Пробное занятие</option>
+                    <option value="remember_all_course">Курс "Вспомнить все"</option>
+                    <option value="individual_course">Индивидуальное занятие</option>
+                    <option value="children_course">Детский курс</option>
+                    <option value="motosport">Мотоспорт</option>
+                    <option value="pitbike">Питбайки</option>
+                    <option value="jimhana">Джимхана</option>
+                </select>
+            </form>
+            <button class="send_letter">
+                Отправить
+            </button>
+        </div>
+
+
+    </div>
 </main>
 </body>
 <script src="js/question.js"></script>
 <script src="js/lessonDescription.js"></script>
+<script src="js/popup.js"></script>
 </html>

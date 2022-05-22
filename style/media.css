@@ -97,6 +97,21 @@
   body main .contact_section .contact_content a, body main .contact_section .contact_content p, body main .contact_section .contact_content li {
     font-size: 1.4em;
   }
+  body main .popup .popup_logo {
+    width: 30%;
+  }
+  body main .popup .popup_text_logo {
+    width: 30%;
+  }
+  body main .popup .popup_content {
+    width: 90%;
+  }
+  body main .popup .popup_content form input, body main .popup .popup_content form selector {
+    width: 65vw;
+  }
+  body main .popup .popup_content .send_letter {
+    font-size: 1.4em;
+  }
 }
 @media (max-width: 765px) {
   body header .menu_anchors ul li a {
@@ -150,11 +165,14 @@
 }
 @media (max-width: 707px) {
   body main .question_section .question_container ul li {
-    font-size: 0.9em;
+    justify-content: center;
+    text-align: center;
+  }
+  body main .question_section .question_container ul li p {
+    width: 100%;
   }
   body main .question_section .question_container ul li .question_mark {
-    width: 30px;
-    height: 30px;
+    margin-top: 15px;
   }
 }
 @media (max-width: 609px) {
@@ -178,17 +196,9 @@
   body main .basic_school .lessons_container .lesson .lesson_img h3, body main .sport_school .lessons_container .lesson .lesson_img h3 {
     font-size: 1.2em;
   }
-}
-@media (max-width: 528px) {
-  body main .question_section .question_container ul li {
-    justify-content: center;
-    text-align: center;
-  }
-  body main .question_section .question_container ul li p {
-    width: 100%;
-  }
-  body main .question_section .question_container ul li .question_mark {
-    margin-top: 15px;
+  body main .popup .popup_content .send_letter {
+    font-size: 1.2em;
+    width: 42%;
   }
 }
 @media (max-width: 425px) {
