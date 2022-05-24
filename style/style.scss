@@ -562,18 +562,19 @@ body {
         form{
           display: flex;
           flex-flow: column;
+          align-items: center;
           row-gap: 2vh;
           input, select{
             min-width: clamp(104px, 22vw, 456px);
             min-height: clamp(36px, 4vh, 186px);
           }
+          .send_letter{
+            @include btn_style;
 
+            margin-top: 3vh;
+          }
         }
-        .send_letter{
-          @include btn_style;
-          width: 30%;
-          margin-top: 3vh;
-        }
+
       }
     }
   }

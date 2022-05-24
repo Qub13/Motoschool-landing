@@ -18,7 +18,6 @@ orderBtn.addEventListener("click", ()=>{
     select.value = "gift_sertificate";
 })
 
-
 btns.forEach(btn=>{
     btn.addEventListener("click", ()=>{
         popup.style.display = "flex";

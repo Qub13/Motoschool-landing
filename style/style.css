@@ -460,13 +460,14 @@ body main .popup .popup_content .popup_text_logo {
 body main .popup .popup_content form {
   display: flex;
   flex-flow: column;
+  align-items: center;
   row-gap: 2vh;
 }
 body main .popup .popup_content form input, body main .popup .popup_content form select {
   min-width: clamp(104px, 22vw, 456px);
   min-height: clamp(36px, 4vh, 186px);
 }
-body main .popup .popup_content .send_letter {
+body main .popup .popup_content form .send_letter {
   margin-top: 10px;
   cursor: pointer;
   width: 60%;
@@ -478,10 +479,9 @@ body main .popup .popup_content .send_letter {
   font-size: 2.2em;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  width: 30%;
   margin-top: 3vh;
 }
-body main .popup .popup_content .send_letter:hover {
+body main .popup .popup_content form .send_letter:hover {
   background-color: #E7F34B;
 }
 

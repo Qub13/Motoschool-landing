@@ -367,9 +367,10 @@
             <div class="close_popup"> <span>&#10005;</span> </div>
             <img src="./media/logo_shortcut.svg" alt="logo shortcut" class="popup_logo">
             <img src="./media/logo.svg" alt="logo" class="popup_text_logo">
-            <form action="">
-                <input type="text" placeholder="Имя">
-                <input type="tel" placeholder="Телефон">
+            <form  action="https://formspree.io/f/xnqwwqje"
+                   method="POST">
+                <input type="text" placeholder="Имя" name="Name">
+                <input type="tel" placeholder="Телефон" name="phone">
                 <select name="select">
                     <option value="basic_course">Курс "Базовый"</option>
                     <option value="test_lesson">Пробное занятие</option>
@@ -380,10 +381,11 @@
                     <option value="pitbike">Питбайки</option>
                     <option value="jimhana">Джимхана</option>
                 </select>
+                <button type="submit" class="send_letter">
+                    Отправить
+                </button>
             </form>
-            <button class="send_letter">
-                Отправить
-            </button>
+
         </div>
 
 

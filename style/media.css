@@ -109,7 +109,7 @@
   body main .popup .popup_content form input, body main .popup .popup_content form selector {
     width: 65vw;
   }
-  body main .popup .popup_content .send_letter {
+  body main .popup .popup_content form .send_letter {
     font-size: 1.4em;
   }
 }
