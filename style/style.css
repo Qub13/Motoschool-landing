@@ -105,7 +105,7 @@ body header .menu_anchors ul li:not(:first-child) {
 body header .menu_anchors ul li a {
   color: #ffffff;
   font-weight: 900;
-  font-size: 2.8em;
+  font-size: 2.6em;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   background-image: linear-gradient(#E7F34B, #E7F34B);
