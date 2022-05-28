@@ -27,6 +27,10 @@ dd {
 
 html, body {
   height: 100%;
+  scroll-behavior: smooth;
+}
+html button, body button {
+  border: none;
 }
 
 body {
@@ -77,13 +81,20 @@ body * {
   -webkit-transition: all 0.3s;
 }
 body header {
-  padding: 0 4vw;
   background: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  z-index: 3;
+  position: fixed;
+  z-index: 444444;
+  width: 100%;
+}
+body header .header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 4vw;
+  width: 100%;
 }
 body header .logo img {
   width: 60%;
@@ -125,13 +136,13 @@ body main .first_section {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 3vh 4vw;
+  padding: 120px 4vw 50px 4vw;
   margin: auto 0;
   overflow: hidden;
 }
 body main .first_section .txt {
   z-index: 3;
-  flex: 1;
+  width: 58%;
 }
 body main .first_section .txt h1, body main .first_section .txt a, body main .first_section .txt p {
   color: #ffffff;
@@ -152,7 +163,7 @@ body main .first_section .txt a, body main .first_section .txt p {
 }
 body main .first_section .big_logo {
   z-index: 3;
-  flex: 2;
+  width: 42%;
   display: flex;
   justify-items: end;
   -webkit-justify-content: flex-end;
@@ -185,7 +196,7 @@ body main .section_header {
 body main .section_header h1 {
   text-transform: uppercase;
   font-size: 6em;
-  font-weight: 700;
+  font-weight: 800;
 }
 body main .basic_school .lessons_container, body main .sport_school .lessons_container {
   display: flex;
@@ -248,7 +259,7 @@ body main .basic_school .lessons_container .lesson .want-learn_btn, body main .s
   background-color: #ffffff;
   text-align: center;
   align-items: center;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2.2em;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -277,7 +288,7 @@ body main .gift_section h3 {
   line-height: normal;
   color: #ffffff;
   text-align: center;
-  padding: 25px 0 75px 0;
+  padding: 6vh 0 3vh 0;
 }
 body main .gift_section .certificate_block {
   display: flex;
@@ -301,7 +312,7 @@ body main .gift_section .order_btn {
   background-color: #ffffff;
   text-align: center;
   align-items: center;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2.2em;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -389,6 +400,23 @@ body main .contact_section .contact_content {
   flex-flow: column;
   row-gap: 3vh;
 }
+@keyframes color-change {
+  0% {
+    color: #ffffff;
+  }
+  50% {
+    color: #E7F34B;
+  }
+  100% {
+    color: #ffffff;
+  }
+}
+body main .contact_section .contact_content .animate_txt {
+  animation: color-change 3s infinite;
+  -webkit-animation: color-change 3s infinite;
+  -moz-animation: color-change 3s infinite;
+  -o-animation: color-change 3s infinite;
+}
 body main .contact_section .contact_content p, body main .contact_section .contact_content a, body main .contact_section .contact_content li {
   color: #ffffff;
   font-size: 3.1em;
@@ -475,7 +503,7 @@ body main .popup .popup_content form .send_letter {
   background-color: #ffffff;
   text-align: center;
   align-items: center;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 2.2em;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
