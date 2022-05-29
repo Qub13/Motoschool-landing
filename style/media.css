@@ -25,6 +25,9 @@
   body main .first_section .big_logo img {
     width: 80%;
   }
+  body main .section_header {
+    height: 15vh;
+  }
   body main .second_section p {
     font-size: 2.1em;
   }
@@ -39,10 +42,10 @@
     font-size: 2em;
   }
   body main .basic_school .lessons_container .lesson .lesson_price, body main .sport_school .lessons_container .lesson .lesson_price {
-    font-size: 1.1em;
+    font-size: 1.5em;
   }
   body main .basic_school .lessons_container .lesson .want-learn_btn, body main .sport_school .lessons_container .lesson .want-learn_btn {
-    font-size: 1.1em;
+    font-size: 1.48em;
   }
   body main .gift_section h3 {
     font-size: 2.1em;
@@ -51,7 +54,7 @@
     font-size: 1.81em;
   }
   body main .gift_section .order_btn {
-    font-size: 1.2em;
+    font-size: 1.9em;
   }
   body main .contact_section .contact_content img {
     width: 28px;
@@ -60,7 +63,7 @@
     font-size: 2.1em;
   }
 }
-@media (max-width: 1123px) {
+@media (max-width: 1206px) {
   body header .menu_anchors ul li a {
     font-size: 1.6em;
   }
@@ -133,7 +136,7 @@
     width: 90%;
   }
   body main .first_section .txt h1 {
-    font-size: 1.9em;
+    font-size: 1.7em;
     padding: 0;
   }
   body main .first_section .txt a, body main .first_section .txt p {
@@ -164,10 +167,10 @@
     font-size: 1em;
   }
   body main .section_header {
-    height: 7.5vh;
+    height: 6.8vh;
   }
   body main .section_header h1 {
-    font-size: 2.3em;
+    font-size: 1.8em;
     font-weight: 900;
     text-align: center;
   }
@@ -181,7 +184,13 @@
     width: 49vw;
   }
   body main .basic_school .lessons_container .lesson .want-learn_btn, body main .sport_school .lessons_container .lesson .want-learn_btn {
-    width: clamp(204px, 30%, 325px);
+    width: clamp(244px, 40%, 325px);
+  }
+  body main .gift_section .order_btn {
+    font-size: 1.48em;
+  }
+  body main .gift_section .certificate_block img {
+    width: 90%;
   }
   body main .gift_section .order_btn {
     width: clamp(204px, 30%, 325px) !important;
@@ -215,6 +224,7 @@
     height: auto;
   }
   body main .basic_school .lessons_container .lesson_description, body main .sport_school .lessons_container .lesson_description {
+    padding: 0 4vw;
     font-size: 1.1em;
   }
   body main .basic_school .lessons_container .lesson .lesson_img h3, body main .sport_school .lessons_container .lesson .lesson_img h3 {
@@ -225,7 +235,7 @@
     width: 42%;
   }
 }
-@media (max-width: 493px) {
+@media (max-width: 505px) {
   body header .logo {
     width: 30%;
   }
@@ -234,9 +244,6 @@
   }
   body header .menu_anchors {
     width: 70%;
-  }
-  body main .first_section {
-    padding: 1vh 4vw;
   }
   body main .first_section .big_logo {
     padding-top: 4px;
@@ -248,27 +255,23 @@
     font-size: 0.8em;
   }
   body main .section_header {
-    height: 5vh;
+    height: 5.55vh;
   }
   body main .section_header h1 {
-    font-size: 1.1em;
+    font-size: 1.35em;
   }
   body main .second_section p {
     font-size: 0.8em;
   }
   body main .basic_school .lessons_container .lesson .lesson_img img, body main .sport_school .lessons_container .lesson .lesson_img img {
-    width: 64vw;
+    width: 69vw;
   }
   body main .gift_section h3 {
     font-size: 1.2em;
-    padding: 10px 0 35px 0;
   }
   body main .gift_section p {
     font-size: 0.9em;
     padding: 10px 0 18px 0;
-  }
-  body main .gift_section .order_btn {
-    margin-bottom: 3vh;
   }
   body main .question_section .question_container {
     padding: 3vh 8vw;
