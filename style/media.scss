@@ -52,6 +52,10 @@
 
       }
 
+      .section_header{
+        height: 15vh;
+      }
+
       .second_section {
         p {
           font-size: 2.1em;
@@ -78,11 +82,11 @@
             }
 
             .lesson_price {
-              font-size: 1.1em;
+              font-size: 1.5em;
             }
 
             .want-learn_btn {
-              font-size: 1.1em;
+              font-size: 1.48em;
             }
           }
         }
@@ -98,7 +102,7 @@
         }
 
         .order_btn {
-          font-size: 1.2em;
+          font-size: 1.9em;
         }
       }
 
@@ -117,7 +121,7 @@
   }
 }
 
-@media (max-width: 1123px) {
+@media (max-width: 1206px) {
   body {
     header {
       .menu_anchors {
@@ -264,7 +268,7 @@
           width: 90%;
 
           h1 {
-            font-size: 1.9em;
+            font-size: 1.7em;
             padding: 0;
           }
 
@@ -302,10 +306,10 @@
       }
 
       .section_header {
-        height: 7.5vh;
+        height: 6.8vh;
 
         h1 {
-          font-size: 2.3em;
+          font-size: 1.8em;
           font-weight: 900;
           text-align: center;
         }
@@ -327,13 +331,21 @@
             }
 
             .want-learn_btn {
-              width: clamp(204px, 30%, 325px);
+              width: clamp(244px, 40%, 325px);
             }
           }
         }
       }
 
       .gift_section {
+        .order_btn{
+          font-size: 1.48em;
+        }
+        .certificate_block{
+          img{
+            width: 90%;
+          }
+        }
         .order_btn {
           width: clamp(204px, 30%, 325px) !important;
         }
@@ -405,6 +417,7 @@
       .basic_school, .sport_school {
         .lessons_container {
           .lesson_description{
+            padding: 0 4vw;
             font-size: 1.1em;
           }
           .lesson {
@@ -428,7 +441,7 @@
   }
 }
 
-@media (max-width: 493px) {
+@media (max-width: 505px) {
   body {
     header {
       .logo {
@@ -446,7 +459,7 @@
 
     main {
       .first_section {
-        padding: 1vh 4vw;
+
 
         .big_logo {
           padding-top: 4px;
@@ -464,10 +477,10 @@
       }
 
       .section_header {
-        height: 5vh;
+        height: 5.55vh;
 
         h1 {
-          font-size: 1.1em;
+          font-size: 1.35em;
         }
       }
 
@@ -482,7 +495,7 @@
           .lesson {
             .lesson_img {
               img {
-                width: 64vw;
+                width: 69vw;
               }
             }
           }
@@ -492,16 +505,11 @@
       .gift_section {
         h3 {
           font-size: 1.2em;
-          padding: 10px 0 35px 0;
         }
 
         p {
           font-size: .9em;
           padding: 10px 0 18px 0;
-        }
-
-        .order_btn {
-          margin-bottom: 3vh;
         }
       }
 

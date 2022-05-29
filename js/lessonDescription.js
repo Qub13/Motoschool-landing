@@ -9,7 +9,7 @@ lessonImg.forEach((lesson, index)=>{
 
         } else{
             lesson.classList.add("lesson_active");
-            lessonDescription[index].style.maxHeight = "800px";
+            lessonDescription[index].style.maxHeight = "1400px";
         }
     })
 

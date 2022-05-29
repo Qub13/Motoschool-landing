@@ -95,14 +95,24 @@ $focus-color: #E7F34B;
   width: 60%;
   border-radius: 23px;
   background-color: #ffffff;
+
+  display: flex;
   text-align: center;
   align-items: center;
-
+  justify-content: center;
   font-weight: 700;
   font-size: 2.2em;
 
   transition: all .3s ease-in-out;
   -webkit-transition: all .3s ease-in-out;
+
+  p{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+  }
 
   &:hover {
     background-color: $focus-color;
@@ -230,7 +240,7 @@ body {
     }
 
     .second_section {
-      padding: 4vh 4vw;
+      padding: 5.3vh 4vw;
 
 
       p {
@@ -246,7 +256,7 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
-      height: clamp(120px, 22vh, 212px);
+      height: clamp(120px, 20vh, 212px);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -259,9 +269,6 @@ body {
     }
 
 
-    .sport_school {
-
-    }
 
     .basic_school, .sport_school {
       .lessons_container {
@@ -271,7 +278,7 @@ body {
         align-items: center;
         row-gap: 4vh;
         column-gap: 6vw;
-        padding: 6vh 4vw 6vh 4vw;
+        padding: 5.3vh 4vw;
 
         .lesson_description {
           font-weight: 600;
@@ -324,7 +331,6 @@ body {
 
           .lesson_price {
             color: #FFFBFB;
-            padding-top: 1vh;
             font-size: 2.2em;
             font-weight: 700;
           }
@@ -342,7 +348,7 @@ body {
       }
 
       .lessons_container {
-        padding: 6vh 1vw 6vh 1vw;
+        padding: 5.3vh 1vw 5.3vh 1vw;
 
       }
 
@@ -359,6 +365,9 @@ body {
         display: flex;
         flex-flow: column;
         align-items: center;
+        .order_btn{
+          width: 40%;
+        }
       }
 
       h3 {
@@ -368,7 +377,7 @@ body {
         color: #ffffff;
         text-align: center;
 
-        padding: 6vh 0 3vh 0;
+        padding: 5.3vh 0 3vh 0;
       }
 
       .certificate_block {
@@ -389,9 +398,8 @@ body {
       }
 
       .order_btn {
-        width: 17% !important;
         @include btn_style;
-        margin: 0 0 6vh 0;
+        margin-bottom: 5.3vh;
       }
     }
 
@@ -401,7 +409,7 @@ body {
       }
 
       .question_container {
-        padding: 6vh 6vw;
+        padding: 5.3vh 6vw;
 
         ul {
           display: flex;
@@ -415,6 +423,7 @@ body {
             justify-content: space-between;
             color: #ffffff;
             font-size: 2.4em;
+            font-weight: 600;
             line-height: normal;
             cursor: pointer;
             text-transform: uppercase;
@@ -430,6 +439,7 @@ body {
               text-transform: none;
               overflow: hidden;
               max-height: 0;
+              font-weight: 400;
 
               align-content: center;
             }
@@ -457,26 +467,44 @@ body {
               border: none;
               transition: box-shadow 400ms cubic-bezier(.2, 0, .7, 1), transform 200ms cubic-bezier(.2, 0, .7, 1);
 
-              &:after {
-                content: "+";
-                font-size: 1.5em;
+              .close_container{
+                width: 79%;
+                height: 79%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: relative;
+                span{
+                  height: 1px;
+                  width: 100%;
+                  background-color: #000000;
+                  position: absolute;
+                  &:nth-child(2){
+                    transform: rotate(90deg);
+                  }
+                }
               }
 
               &:hover {
-                transform: rotate(45deg);
+
                 box-shadow: 0 0 1px 15px rgba(#E7F34B, 0.4),
                 0 0 1px 30px rgba(#E7F34B, 0.1),
                 0 0 1px 45px rgba(#E7F34B, 0.1);
+                .close_container{
+                  transform: rotate(45deg);
+                }
               }
             }
 
             .question_mark_active {
               background: #111111;
-
-              &:after {
-                color: #E7F34B;
-                transform: rotate(45deg);
-              }
+             .close_container{
+               transform: rotate(45deg);
+               span{
+                 background-color: $focus-color;
+               }
+             }
             }
           }
         }
@@ -489,7 +517,7 @@ body {
       }
 
       .contact_content {
-        padding: 6vh 4vw;
+        padding: 5.3vh 4vw;
         display: flex;
         flex-flow: column;
         row-gap: 3vh;
