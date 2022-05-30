@@ -8,7 +8,7 @@ questionBtn.forEach((btn, index)=>{
             answer[index].style.maxHeight = "0";
         } else{
             btn.classList.add("question_mark_active");
-            answer[index].style.maxHeight = "300px";
+            answer[index].style.maxHeight = "900px";
         }
     })
 })
