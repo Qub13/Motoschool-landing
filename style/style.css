@@ -184,7 +184,7 @@ body main .second_section {
 body main .second_section p {
   color: #ffffff;
   font-weight: 600;
-  text-align: center;
+  text-align: justify;
   font-size: 3.1em;
 }
 body main .section_header {
@@ -219,6 +219,7 @@ body main .basic_school .lessons_container .lesson_description, body main .sport
   max-height: 0;
   overflow: hidden;
   margin-bottom: 8px;
+  text-align: justify;
 }
 body main .basic_school .lessons_container .lesson, body main .sport_school .lessons_container .lesson {
   display: flex;
@@ -383,6 +384,7 @@ body main .question_section .question_container ul li .question_answer {
   overflow: hidden;
   max-height: 0;
   font-weight: 400;
+  text-align: justify;
   align-content: center;
 }
 body main .question_section .question_container ul li .question_mark {
