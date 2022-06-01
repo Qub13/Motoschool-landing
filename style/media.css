@@ -33,7 +33,6 @@
   }
   body main .basic_school .lessons_container .lesson_description, body main .sport_school .lessons_container .lesson_description {
     font-size: 1.7em;
-    text-align: center;
   }
   body main .basic_school .lessons_container .lesson .lesson_img h3, body main .sport_school .lessons_container .lesson .lesson_img h3 {
     font-size: 2em;
@@ -62,22 +61,26 @@
 }
 @media (max-width: 1236px) {
   body header .menu_anchors ul li a {
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   body main .first_section {
     flex-flow: column;
     align-items: center;
-    justify-content: space-around;
-    padding-top: 40px;
+    justify-content: center;
+    row-gap: 3vh;
   }
   body main .first_section .txt {
     text-align: center;
+    width: 100%;
   }
   body main .first_section .txt h1 {
-    font-size: 2.3em;
+    font-size: 3em;
   }
   body main .first_section .txt a, body main .first_section .txt p {
-    font-size: 1.3em;
+    font-size: 1.8em;
+  }
+  body main .first_section .big_logo {
+    width: 60%;
   }
   body main .second_section p {
     font-size: 1.3em;
@@ -121,28 +124,27 @@
 }
 @media (max-width: 765px) {
   body header .menu_anchors ul li a {
-    font-size: 1.2em;
+    font-size: 0.78em;
   }
   body main .first_section {
     flex-flow: column;
+    height: 35vh;
+  }
+  body main .first_section video {
     height: 100%;
   }
   body main .first_section .big_logo {
-    flex: 1;
-    padding-bottom: 2vh;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
   body main .first_section .txt {
     display: flex;
     text-align: center;
     flex: 2;
     justify-content: center;
-    padding-top: 32px;
     width: 100%;
   }
   body main .first_section .txt h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -203,9 +205,6 @@
   }
 }
 @media (max-width: 609px) {
-  body header .menu_anchors ul li a {
-    font-size: 0.9em;
-  }
   body main .basic_school .lessons_container .lesson_description, body main .sport_school .lessons_container .lesson_description {
     padding: 0 4vw;
     font-size: 0.8em;
@@ -230,9 +229,6 @@
   }
   body main .first_section .big_logo {
     padding-top: 4px;
-  }
-  body main .first_section .txt h1 {
-    font-size: 0.9em;
   }
   body main .first_section .txt a, body main .first_section .txt p {
     font-size: 0.8em;

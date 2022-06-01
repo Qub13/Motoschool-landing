@@ -250,7 +250,7 @@ body {
       p {
         color: #ffffff;
         font-weight: 600;
-        text-align: center;
+        text-align: justify;
         font-size: 3.1em;
       }
     }
@@ -292,6 +292,7 @@ body {
           max-height: 0;
           overflow: hidden;
           margin-bottom: 8px;
+          text-align: justify;
         }
 
 
@@ -446,6 +447,7 @@ body {
               overflow: hidden;
               max-height: 0;
               font-weight: 400;
+              text-align: justify;
 
               align-content: center;
             }
