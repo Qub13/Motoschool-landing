@@ -12,7 +12,7 @@ orderBtn.addEventListener("click", ()=>{
     popup.style.display = "flex";
     let opt = document.createElement('option');
     opt.value = "gift_sertificate";
-    opt.innerHTML = "Подарочный сертификат";
+    opt.innerHTML = "Подарунковий сертифікат";
     select.appendChild(opt);
 
     select.value = "gift_sertificate";
