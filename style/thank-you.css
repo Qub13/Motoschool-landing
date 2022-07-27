@@ -73,6 +73,7 @@ body {
   font-family: "Exo 2", sans-serif;
   font-size: 100%;
   font-weight: 400;
+  overflow: hidden;
 }
 body main {
   width: 100%;
